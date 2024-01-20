@@ -461,6 +461,10 @@ body {
   fill: rgba(104, 162, 202, 1);
 }
 
+.footer-social-icon:focus-visible path{
+  fill: rgba(104, 162, 202, 1);
+}
+
 .footer-social-icon:active path{
   fill: rgba(104, 162, 202, 0.3);
 }
@@ -489,8 +493,9 @@ body {
   color: rgba(117, 97, 87, 1);
 }
 
-.footer-contacts-address-phone:focus {
+.footer-contacts-address-phone:focus-visible {
   color: rgba(117, 97, 87, 1);
+  outline: none;
 }
 
 .footer-contacts-address-phone:active {
@@ -515,7 +520,7 @@ body {
   fill: rgba(117, 97, 87, 1);
 }
 
-.footer-html-logo:focus path{
+.footer-html-logo:focus-visible path{
   fill: rgba(117, 97, 87, 1);
 }
 
@@ -1069,7 +1074,18 @@ input[type="checkbox"] {
   box-sizing: border-box;
 }
 
+.button-pagination:focus-visible {
+  outline: none;
+}
+
 .button-pagination.regular:hover {
+  background: linear-gradient(0deg, #68A2CA, #68A2CA),
+  linear-gradient(0deg, #82B3D3, #82B3D3);
+  border: 1px solid #82B3D3;
+}
+
+.button-pagination.regular:focus-visible {
+  outline: none;
   background: linear-gradient(0deg, #68A2CA, #68A2CA),
   linear-gradient(0deg, #82B3D3, #82B3D3);
   border: 1px solid #82B3D3;
@@ -1172,6 +1188,11 @@ input[type="checkbox"] {
   background: rgba(97, 80, 72, 1);
 }
 
+.button-brown:focus-visible {
+  outline: none;
+  background: rgba(97, 80, 72, 1);
+}
+
 .button-brown:active {
   background: rgba(117, 97, 87, 1);
   color: rgba(255, 255, 255, 0.3);
@@ -1181,12 +1202,22 @@ input[type="checkbox"] {
   background: rgba(104, 162, 202, 1);
 }
 
+.button-blue:focus-visible {
+  outline: none;
+  background: rgba(104, 162, 202, 1);
+}
+
 .button-blue:active {
   background: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 0.3);
 }
 
 .button-green:hover {
+  background: rgba(108, 158, 66, 1);
+}
+
+.button-green:focus-visible {
+  outline: none;
   background: rgba(108, 158, 66, 1);
 }
 
