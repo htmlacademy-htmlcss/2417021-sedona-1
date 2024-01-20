@@ -1200,9 +1200,9 @@ input[type="checkbox"] {
   opacity: 60%;
 }
 
-.button-transparent:focus {
+.button-transparent:focus-visible {
   color: rgba(255, 255, 255, 1);
-  border: 3px solid rgba(131, 179, 211, 1)
+  outline: 3px solid rgba(131, 179, 211, 1)
 }
 
 .button-transparent:active {
