@@ -740,6 +740,10 @@ body {
   border-radius: 4px;
 }
 
+.current-grid-toggle {
+  border: 2px solid #000000;
+}
+
 .card-grid-toggle:focus {
   border: 2px solid #68A2CA;
   outline: none;
@@ -1029,7 +1033,32 @@ input[type="checkbox"] {
   border-radius: 50%;
 }
 
+.control-select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  min-width: 291px;
+}
+
 .control-select {
+  width: 100%;
+  padding: 11px 48px 11px 16px;
+  margin-left: 200px;
+  font: inherit;
+  font-weight: 400;
+  color: #333333;
+  border: 2px solid #E5E5E5;
+  background-color: transparent;
+  border-radius: 4px;
+  background-image: url("../images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
+  width: 292px;
+}
+
+/* .control-select {
   width: 292px;
   padding: 11px;
   border: 2px solid #E5E5E5;
@@ -1039,7 +1068,7 @@ input[type="checkbox"] {
   line-height: 21px;
   text-align: left;
   color: #333333;
-}
+} */
 
 .control-select:hover {
   border: 2px solid rgba(104, 162, 202, 1);
