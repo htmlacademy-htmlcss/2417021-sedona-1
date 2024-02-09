@@ -109,29 +109,17 @@ img {
   font-weight: 700;
 }
 
-.navigation-link-index::before{
-  position: absolute;
-  bottom: -1px;
+.current-page::before {
+  position: relative;
+  display: block;
+  bottom: -45px;
   content: "";
   border: 1px solid #756257;
-  width: 68px;
-  left: 50%;
-  margin-left: -34px;
+  width: 100%;
 }
-
-.navigation-link-catalog::before{
-  position: absolute;
-  bottom: -1px;
-  content: "";
-  border: 1px solid #756257;
-  width: 93px;
-  left: 50%;
-  margin-left: -46.5px;
-}
-
 
 .navigation-user .navigation-link {
-  padding: 19.75px 12px;
+  padding: 20px 12px;
 }
 
 .navigation-icon {
@@ -257,7 +245,7 @@ img {
 }
 
 .without-picture .advantages-title {
-  padding-top: 112.5px;
+  padding-top: 113px;
 }
 
 .with-picture {
@@ -268,7 +256,7 @@ img {
 
 .advantages-title::before {
   position: absolute;
-  margin-top: 86.5px;
+  margin-top: 87px;
   left: 50%;
   margin-left: -30px;
   content: "";
@@ -279,7 +267,7 @@ img {
 
 .advantages-title:nth-last-child(2):before {
   position: absolute;
-  margin-top: 86.5px;
+  margin-top: 87px;
   left: 50%;
   margin-left: -30px;
   content: "";
@@ -303,7 +291,7 @@ img {
 }
 
 .sedona-pseudo-title {
-  padding: 64px 347.5px 20px;
+  padding: 64px 348px 20px;
   margin: 0;
   font-size: 30px;
   font-weight: 700;
@@ -468,7 +456,7 @@ img {
 .footer-contacts {
   display: grid;
   grid-template-columns: 142px 720px 115px;
-  gap: 41.5px;
+  gap: 42px;
   justify-content: center;
   align-items: center;
   padding: 40px 0 30px;
@@ -493,7 +481,7 @@ img {
   display: block;
   background-repeat: no-repeat;
   background-position: center;
-  width: 47.33px;
+  width: 48px;
   height: 40px;
 }
 
@@ -702,7 +690,7 @@ img {
 }
 
 .hotels-filter-group {
-  width: 150.43px;
+  width: 151px;
   padding: 0;
   margin: 0;
   margin-right: 70px;
@@ -1134,6 +1122,7 @@ input[type="email"] {
 }
 
 .control-select {
+  -webkit-appearance: none;
   width: 292px;
   padding: 11px 48px 11px 16px;
   margin-left: 200px;
@@ -1147,7 +1136,6 @@ input[type="email"] {
   background-repeat: no-repeat;
   background-position: right 16px center;
   appearance: none;
-  -webkit-appearance: textarea;
 }
 
 .control-select:hover {
@@ -1660,11 +1648,11 @@ input[type="email"] {
   background-color: #E6E6E6;
 }
 
-.modal-form-field:active {
+
+.modal-form-field:not(:placeholder-shown):focus {
   border: 2px solid #000000;
   outline: none;
   background-color: #F2F2F2;
-
 }
 
 .modal-form-field:disabled {
