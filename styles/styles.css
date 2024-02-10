@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: > 2% and last 1 version
-*/
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -250,7 +243,7 @@ img {
 
 .with-picture {
   max-width: 1200px;
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82B3D3;
   color: #ffffff;
 }
 
@@ -455,7 +448,7 @@ img {
 
 .footer-contacts {
   display: grid;
-  grid-template-columns: 142px 720px 115px;
+  grid-template-columns: 144px 720px 115px;
   gap: 42px;
   justify-content: center;
   align-items: center;
@@ -466,7 +459,7 @@ img {
 }
 
 .footer-social-list {
-  max-width: 142px;
+  min-width: 142px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -591,7 +584,7 @@ img {
 }
 
 .inner-header-title {
-  padding: 35px 565px 8px 70px;
+  padding: 34px 563px 8px 70px;
   margin: 0;
   font-size: 60px;
   font-weight: 700;
@@ -752,7 +745,7 @@ img {
 /* Hotel Cards */
 
 .catalog-header {
-  padding: 50px 70px 0;
+  padding: 49px 70px 0;
   display: flex;
   align-items: center;
   width: 1060px;
@@ -851,7 +844,7 @@ img {
 .hotel-card-image {
   object-fit: contain;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .hotel-card-article:nth-child(1) {
@@ -908,7 +901,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  margin-bottom: 17.5px;
+  margin-bottom: 18px;
   padding: 0;
 }
 
@@ -927,6 +920,10 @@ img {
 
 .hotel-card-stars {
   margin: 0;
+}
+
+.rating-star:hover path{
+  fill: rgba(130, 179, 211, 0.8);
 }
 
 /* Pagination */
@@ -970,7 +967,7 @@ img {
 
 .inner-newsletter-title {
   margin: 0;
-  padding: 96px 0 20px;
+  padding: 93px 0 20px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -1153,6 +1150,11 @@ input[type="email"] {
 
 .control-select:hover:focus {
   border: 2px solid rgba(63, 94, 114, 1);
+}
+
+.control-select:disabled {
+  color: #0000004D;
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .control-input {
