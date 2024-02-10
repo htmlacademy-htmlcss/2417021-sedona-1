@@ -937,10 +937,6 @@ img {
   width: 88px;
 }
 
-.rating-star:hover path{
-  fill: rgba(130, 179, 211, 0.8);
-}
-
 /* Pagination */
 
 .pagination {
